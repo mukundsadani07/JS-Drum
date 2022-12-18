@@ -3,8 +3,8 @@ function playSound(e){
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     if(!audio)return;//for stopping the function
     // console.log(audio);
-    key.classList.add('playing');
     audio.currentTime = 0; // rewind to the start
+    key.classList.add('playing');
     audio.play();
     // console.log(key);
     

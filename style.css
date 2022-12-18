@@ -1,7 +1,8 @@
 html{
-    font-size: 10px;
+    /* font-size: 1rem; */
     background: url('./img/drum.png') top center;
     background-size: cover;
+    /* height: 100vh; */
     /* max-height: 65vh; */
     /* margin: 0 auto; */
     background-color: darkmagenta;
@@ -16,21 +17,22 @@ body{
 
 .keys{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 .key{
-    border:.4rem solid black;
+    border: 3px solid black;
     border-radius: 0.5rem;
     margin:1rem;
     padding: 1rem 0.5rem;
-    width: 10rem;
+    width: 5rem;
     text-align: center;
     background: rgba(0,0,0,0.4);
-    font-size: 1.5rem;
+    font-size: 0.6rem;
     color: white;
     text-shadow: 0 0 0.5rem black;
     transition: all .08s ease; 
@@ -44,11 +46,11 @@ body{
 
 kbd{
     display: block;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .sound{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
